@@ -22,10 +22,17 @@ known_first_party = [
     "mattergen",
 ]
 
+
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mattergen"
-version = "1.0"
-requires-python = ">= 3.10"
+version = "0.1.0"
+description = "Materials generation using machine learning"
+requires-python = ">=3.8"
 
 dependencies = [
 "ase>=3.22.1",
